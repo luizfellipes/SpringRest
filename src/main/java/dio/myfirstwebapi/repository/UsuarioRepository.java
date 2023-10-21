@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class UserRepository {
+public class UsuarioRepository {
 
 
     public void save(Usuario usuario) {
@@ -33,12 +33,12 @@ public class UserRepository {
 
     public Usuario findById(Integer id) {
         System.out.printf("Find/id - Recebendo o id: %d para localizar um usuario ", id);
-        return new Usuario("Luiz", "palavrapasse");
+        return new Usuario("luiz", "palavrapasse");
     }
 
     public Usuario findByUsername(String username) {
         System.out.printf("Find/username - Recebendo o username: %S para consulta ", username);
-        return new Usuario("Luiz", "palavrapasse");
+        return new Usuario("luiz", "palavrapasse");
     }
 
 
